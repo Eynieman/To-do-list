@@ -28,3 +28,14 @@ ul .list-group-item:hover {
 	text-decoration: none;
 	color: #909092;
 }
+
+
+/*--------------------  Inputs --------------------*/
+input:focus {
+	background: rgb(211, 211, 19);
+	font-weight: 900;
+}
+
+textarea:focus{
+	font-weight: 900;
+}
