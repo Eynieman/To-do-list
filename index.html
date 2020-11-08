@@ -33,6 +33,115 @@
         </div>
     </header>
 
+    
+    <!--Formulario-->
+    <div class="was-validated container">
+        <form class="m-5" id="formUser">
+            <div class="form-group col-xl-6 mx-auto">
+                <label for="name"> Nombre y Apellido:</label>
+                <input type="text" id="name" class="form-control input" required
+                    placeholder="Ingrese su Nombre y Apellido" style="text-align:center">
+            </div>
+            <div class="form-group col-xl-4 mx-auto">
+                <label for="email"> Correo: </label>
+                <input type="email" id="email" class="form-control input" required placeholder="Ingrese su correo"
+                    style="text-align:center">
+            </div>
+            <div class="form-group col-xl-4 mx-auto">
+                <label for="fecha"> Fecha: </label>
+                <input type="date" id="fecha" class="form-control input" required style="text-align:center">
+            </div>
+            <div class="form-group col-xl-4 mx-auto">
+                <label for="division">Elija su tema:</label>
+                <select class="form-control input" id="tema" required>
+                    <option value="" disabled selected>¿Cuál es su tema?</option>
+                    <option>Hogar</option>
+                    <option>Trabajo</option>
+                    <option>Familia</option>
+                    <option>Gastos</option>
+                    <option>Ideas</option>
+                </select>
+            </div>
+            <div class="form-group form-group-lg">
+                <label for="exampleFormControlTextarea" class="ml-5"> Título de la nota:</label>
+                <textarea class="form-control" id="titulo" rows="2" maxlength="50" required
+                    placeholder="Ingrese el título..."></textarea>
+            </div>
+            <div class="form-group form-group-lg">
+                <label for="exampleFormControlTextarea" class="ml-5"> Nota diaria:</label>
+                <textarea class="form-control" id="nota" rows="6" maxlength="500" required
+                    placeholder="Ingrese la nota..."></textarea>
+                <div class="col-sm-15 mt-4">
+                    <span class="help-block ml-3">Guardaremos sus notas de manera organizada.</span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block btn-outline-warning my-5">Agregar</button>
+        </form>
+        <ul id="usersList" class="list-group"></ul>
+    </div>
+
+    <!-- Barra de búsqueda por nombre y apellido -->
+    <div class="container-1 my-2">
+        <div class="card rounded-5 mb-4 mx-5">
+            <form class="align-items-center center-block" id="searchForm">
+                <input class="center-block" type="search" id="search" placeholder="Ingrese el nombre a buscar.." style="width: 100%; text-align: center;">
+            </form>
+        </div>
+    </div>
+
+    <!--Tabla donde se agregan notas-->
+    <div class="container">
+        <table class="table" id="Notas">
+            <thead>
+                <tr>
+                    <th class="border-1 large font-weight-bold p-4">Tus notas:</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <p class="container d-flex flex-wrap justify-content-around" id="usersTable"></p>
+
+    <!-- Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar usuario</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form class="m-3" id="formEdit">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="email"> Correo </label>
+                            <input type="email" id="emailModal" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha"> Fecha de nacimiento </label>
+                            <input type="date" id="fechaModal" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tema">Tema</label>
+                            <select class="form-control" id="temaModal" required>
+                                <option value="" disabled selected>Elija su tema:</option>
+                                <option>Hogar</option>
+                                <option>Trabajo</option>
+                                <option>Familia</option>
+                                <option>Gastos</option>
+                                <option>Ideas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary"> Actualizar </button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!-- Links jQuery, Popper.js, and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
