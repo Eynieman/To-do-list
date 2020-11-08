@@ -232,3 +232,12 @@ search.oninput = () => {
 }
 
 displayAllUsers();
+
+
+//Funcion para colorear los inputs:
+$(".input").focus(function () {
+    $(this).css({ "background": "rgb(148, 148, 37)" })
+})
+$(".input").blur(function () {
+    $(this).css({ "background": "transparent" })
+})
