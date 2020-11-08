@@ -39,3 +39,42 @@ input:focus {
 textarea:focus{
 	font-weight: 900;
 }
+
+/*---------------  Sección Redes sociales / Footer ---------------*/
+.contact a {
+	color:#E9CA00;
+}
+
+.contact a:hover {
+	color:#888;
+}
+
+.contact {
+	width: 100%;
+	margin: 50px 0 50px 0;
+	text-align: center;
+}
+
+.contact a{
+	margin: auto;
+	margin-left: 15px;
+	font-size: 70px;
+	text-decoration: none;
+}
+
+footer {
+	justify-content: center;
+	text-align:center;
+	color: rgb(211, 211, 19);
+	width:100%;
+	background-color:#373738;
+	padding:10px 0;
+}
+
+footer img {
+	margin-bottom: 50px;
+}
+
+footer h5 {
+	margin-bottom: 30px;
+}
