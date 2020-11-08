@@ -12,6 +12,7 @@ body {
 	opacity: 0.9;
 }
 
+
 /*--------------------  Navbar --------------------*/
 .jumbotron {
 	background-color:#373738;
@@ -39,6 +40,34 @@ input:focus {
 textarea:focus{
 	font-weight: 900;
 }
+
+
+/*---------------  Sección busqueda de Usuarios en cards ---------------*/
+.container-1{
+	vertical-align: middle;
+}
+
+.container-1 input#search{
+	width: 300px;
+	height: 50px;
+	background: #2b303b;
+	border: none;
+	font-size: 16pt;
+	color: #63717f;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.container-1 input#search:focus {
+	background: rgb(211, 211, 19);
+	font-weight: 900;
+}
+
+.container-1:focus{
+	font-weight: 900;
+}
+
 
 /*---------------  Sección Redes sociales / Footer ---------------*/
 .contact a {
